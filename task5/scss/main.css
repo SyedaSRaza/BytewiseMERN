@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+  margin: 0 auto;
+}
+.main .main-p1, .main .main-p2 {
+  font-weight: 1000;
+}
+.main .main-p1:hover, .main .main-p2:hover {
+  color: pink;
+}
+.main .main-p2:hover {
+  color: green;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.light {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=main.css.map */

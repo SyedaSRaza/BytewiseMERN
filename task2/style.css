@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(205, 250, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.5em;
+    margin:0;
+}
+.container{
+    width:500px;
+    margin: auto;
+}
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+
+}
+.button:hover{
+    background-color: #b9b9b9;
+    color: #000000;
+}
+.clr{
+    clear: both;
+}
+.box-1{
+    background-color: rgb(223, 248, 248);
+    color:rgb(95, 43, 43);
+    border: 2px rgb(51, 26, 26) solid;
+    border-top-right-radius: 10%;
+    border-top-style: dotted;
+    padding: 25px 10px;
+    margin: 22px 0;
+}
+.box-1 h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:underline;
+    text-transform:capitalize;
+    word-spacing: 1em;
+    font-style: italic;
+}
+.box-2{
+    border: 3px dotted #000000;
+    padding: 20px;
+    margin: 20px 0;
+}
+.list{
+    border:1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+}
+.list h2{
+    text-align: center;
+}
+.list ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: green;
+}
+a:visited{
+    color: red;
+}
+.list li{
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+}
+.myForm{
+    padding: 20px 45px 20px 20px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+.myForm .form-grp{
+    padding-bottom: 15px;
+}
+.myForm label{
+    display: block;
+}
+.myForm input[type="text"], .myForm textarea{
+    padding: 10px;
+    width: 100%; 
+}
+.block{
+    float:left;
+    width: 33.3%;
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+#main-block{
+    float: left;
+    width:70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#side-bar{
+    float: right;
+    width:30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.p-box{
+    width:500px;
+    height:300px;
+    border: 1px solid;
+    margin-top: 15px;
+    position: relative;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.p-box h1{
+    position: absolute;
+    top:40px;
+    left: 250px;
+}
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+.fix-me{
+    position: fixed;
+    top:400px;
+}
+.mylist li:first-child{
+    background-color: rgb(245, 165, 165);
+}
+.mylist li:last-child{
+    background: rgb(181, 219, 255);
+}
+.mylist li:nth-child(4)
+{
+    background: #bbbaba;
+}
