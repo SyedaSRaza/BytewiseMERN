@@ -12,3 +12,4 @@ This readme contains all MERN (Mongo, Express, React, Node) tasks
 | 6   | Task 6: Tailwind | &#9745;             | GitHub  |
 | 7   | Task 7: JavaScript | &#9745;             | - |
 | 8   | Task 8: DOM Manipulation | &#9745;             | GitHub |
+| 9   | Task 9: Asynchronous JavaScript | &#9745;             | GitHub |
