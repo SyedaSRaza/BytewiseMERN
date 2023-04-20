@@ -13,3 +13,4 @@ This readme contains all MERN (Mongo, Express, React, Node) tasks
 | 7   | Task 7: JavaScript | &#9745;             | - |
 | 8   | Task 8: DOM Manipulation | &#9745;             | GitHub |
 | 9   | Task 9: Asynchronous JavaScript | &#9745;             | GitHub |
+| 10   | Task 10: TODO APP in JavaScript | &#9745;             | GitHub |
