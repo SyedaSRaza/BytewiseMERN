@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: #374151;
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #6B7280;
+	margin-bottom: 1rem;
+}
+
+#new-grocery-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-grocery-input {
+	flex: 1 1 0%;
+	background-color: #c0adad;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: #EEE;
+	font-size: 1.25rem;
+}
+
+#new-grocery-input::placeholder {
+	color: #6B7280;
+}
+
+#new-grocery-submit {
+	color: black;
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, #EC4899, #8B5CF6);
+    border-radius: 7px;
+	cursor: pointer;
+	transition: 0.4s;
+    padding: 19px;
+}
+
+#new-grocery-submit:hover {
+	opacity: 0.6;
+}
+
+#new-grocery-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.grocery-list {
+	padding: 1rem;
+}
+
+.grocery-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #6B7280;
+	margin-bottom: 1rem;
+}
+
+#groceries .grocery {
+	display: flex;
+	justify-content: space-between;
+	background-color: #111827;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.grocery .content {
+	flex: 1 1 0%;
+}
+
+.grocery .content .text {
+	color: #EEE;
+	font-size: 20px;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.grocery .content .text:not(:read-only) {
+	color: #EC4899;
+}
+
+.grocery .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.grocery .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.grocery .actions button:hover {
+	opacity: 0.8;
+}
+
+.grocery .actions button:active {
+	opacity: 0.6;
+}
+
+.grocery .actions .edit {
+	background-image: linear-gradient(to right, #EC4899,#8B5CF6);
+    color: black;
+	font-weight: 700;
+    border-radius: 7px;
+	cursor: pointer;
+	transition: 0.4s;
+    padding: 6px 10px;
+}
+
+.grocery .actions .delete {
+	color: crimson;
+}

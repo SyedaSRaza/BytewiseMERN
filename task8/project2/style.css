@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+body{
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+#open-btn{
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #9e8d8dc2;
+    width: 290px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 3px black;
+    transition: 0.5s;
+}
+#open-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+#modal{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate((-50%,-50%));
+    width: 180px;
+    height: 80px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: animatedmodal;
+    animation-duration: .4s;
+    background: #9e8d8dc2;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+#close-btn{
+    font-size: 2rem;
+}
+#close-btn{
+    cursor:pointer;
+    font-size: 3rem;
+    color: rgb(194, 13, 13);
+}
+#modal-container{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+    
+}
+
+@keyframes animatedmodal{
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
