@@ -1,0 +1,59 @@
+@import './reset';
+@import './variables';
+
+@function weight($weight){
+    @return map-get($font-weight, $weight);
+}
+
+@mixin flexcenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin theme($light: true){
+    @if $light{
+        background-color: lighten($secondary-color,100%);
+        color: darken($primary-color,100%);
+    }
+}
+
+@mixin mobile{
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+
+body {
+    background: $secondary-color;
+    color: $primary-color;
+}
+
+.main {
+@include flexcenter(row);
+    width: 80% - 20%;
+    margin: 0 auto;
+
+    #{&}-p1 {
+        font-weight: weight(bold);
+
+        &:hover {
+            color: pink;
+        }
+    }
+
+    #{&}-p2{
+        @extend .main-p1;
+        &:hover{
+            color: $accent-color;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.light{
+    @include theme($light:true);
+}
